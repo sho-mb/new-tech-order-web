@@ -10,7 +10,10 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "daisyui": "^3.9.4",
     "nuxt": "^3.11.2",
+    "unocss": "^0.60.3",
+    "unocss-preset-daisy": "^7.0.0",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
