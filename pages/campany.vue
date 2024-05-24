@@ -6,10 +6,8 @@
 
 <script lang="ts" setup>
 definePageMeta({
-  title: 'About Campany Page'
+  title: 'About Campany Page',
 })
 </script>
 
-<style>
-
-</style>
+<style></style>
