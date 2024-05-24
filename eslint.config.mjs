@@ -1,9 +1,9 @@
 // @ts-check
-import withNuxt from "./.nuxt/eslint.config.mjs";
+import withNuxt from './.nuxt/eslint.config.mjs'
 
 export default withNuxt({
+  files: ['**/*.ts'],
   rules: {
-    "@stylistic/ts/indent": ["error", 2],
-    "no-console": "off",
+    'no-console': 'off',
   },
-});
+})

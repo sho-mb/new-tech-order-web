@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.3.13",
@@ -22,6 +23,9 @@
   },
   "devDependencies": {
     "@unocss/nuxt": "^0.60.3",
-    "prettier": "3.2.5"
+    "lint-staged": "^15.2.4"
+  },
+  "lint-staged": {
+    "*.{vue, ts, js,js,jsx,ts,tsx,vue,css,html,md,json,cjs}": "eslint . --fix"
   }
 }

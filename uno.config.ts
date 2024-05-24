@@ -1,20 +1,19 @@
-import { defineConfig } from "unocss";
-import { presetUno, presetWebFonts } from "unocss";
-import { presetDaisy } from "unocss-preset-daisy";
+import { presetUno, presetWebFonts, defineConfig } from 'unocss'
+import { presetDaisy } from 'unocss-preset-daisy'
 
 export default defineConfig({
   presets: [
     presetUno(),
     presetDaisy({
       styled: false,
-      themes: ["light"],
+      themes: ['light'],
       base: false,
     }),
     presetWebFonts({
-      provider: "google",
+      provider: 'google',
       fonts: {
-        montserrat: "Montserrat:400,700",
+        montserrat: 'Montserrat:400,700',
       },
     }),
   ],
-});
+})
