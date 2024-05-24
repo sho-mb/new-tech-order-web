@@ -1,7 +1,9 @@
 <template>
-  <div class="container m-auto">
-    <Header />
-    <slot />
+  <div>
+    <HeaderNav />
+    <div class="container m-auto">
+      <slot />
+    </div>
   </div>
 </template>
 
@@ -20,5 +22,7 @@ useHead({
 <style>
 body {
   font-family: "Helvetica", sans-serif;
+  margin: 0;
+  color: rgb(239, 239, 239);
 }
 </style>
