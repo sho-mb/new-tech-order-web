@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@unocss/nuxt', '@nuxt/eslint'],
+  modules: ['@unocss/nuxt', '@nuxt/eslint', 'nuxt-aos'],
   eslint: {
     config: {
       stylistic: true,
@@ -37,5 +37,20 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  aos: {
+    disable: false,
+    startEvent: 'DOMContentLoaded',
+    initClassName: 'aos-init',
+    animatedClassName: 'aos-animate',
+    useClassNames: false,
+
+    offset: 120,
+    delay: 50,
+    duration: 400,
+    easing: 'ease',
+    once: false,
+    mirror: false,
+    anchorPlacement: 'top-bottom',
   },
 })

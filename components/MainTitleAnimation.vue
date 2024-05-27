@@ -1,12 +1,28 @@
 <template>
   <div>
-    <div class="backgroundAccent">
-      <h1 class="text-5xl p-5">
+    <div
+      class="backgroundAccent"
+      data-aos="fade-right"
+      data-aos-duration="4000"
+    >
+      <h1
+        class="text-5xl p-5"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         "Change the world with marketing"
       </h1>
     </div>
-    <div class="backgroundAccent">
-      <h1 class="text-5xl p-5">
+    <div
+      class="backgroundAccent"
+      data-aos="fade-right"
+      data-aos-duration="4000"
+    >
+      <h1
+        class="text-5xl p-5"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         Work with influencers to make a movement
       </h1>
     </div>
