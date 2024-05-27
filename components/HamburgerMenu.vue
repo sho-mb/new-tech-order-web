@@ -55,7 +55,7 @@ function toggleMenu() {
 }
 
 .hamburger-icon {
-  width: 32px;
+  width: 28px;
   height: 2px;
   background-color: #f9f9f9;
   border-radius: 3px;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero />
+    <HeroImage />
     <div class="container m-auto" />
   </div>
 </template>

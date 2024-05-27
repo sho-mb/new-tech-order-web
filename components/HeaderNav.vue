@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900 py-2">
+  <div class="bg-black py-2">
     <div class="container m-auto flex justify-between items-center">
       <div class="flex items-center">
         <img

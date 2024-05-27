@@ -1,11 +1,24 @@
 <template>
   <div>
     <HeaderNav />
-    <slot />
+    <div
+      class="background"
+      :style="{ backgroundImage: `url(${background})` }"
+    >
+      <div
+        class="background2"
+        :style="{ backgroundImage: `url(${backgroundFlip})` }"
+      >
+        <slot />
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import background from '~/public/img/background.jpg'
+import backgroundFlip from '~/public/img/backgroundFlip.png'
+
 const route = useRoute()
 
 useHead({
@@ -22,5 +35,22 @@ body {
   font-family: "Helvetica", sans-serif;
   margin: 0;
   color: rgb(239, 239, 239);
+  height: 5000px;
+  background: #110806;
+}
+
+.background, .background2 {
+  width: 100vw;
+  height: 4500px;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+.background {
+  background-position:50% 0%;
+}
+
+.background2 {
+  background-position:50% 100%;
 }
 </style>
