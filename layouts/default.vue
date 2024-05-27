@@ -1,9 +1,7 @@
 <template>
   <div>
     <HeaderNav />
-    <div class="container m-auto">
-      <slot />
-    </div>
+    <slot />
   </div>
 </template>
 
