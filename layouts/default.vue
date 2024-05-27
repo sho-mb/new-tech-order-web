@@ -41,7 +41,7 @@ body {
 
 .background, .background2 {
   width: 100vw;
-  height: 4500px;
+  height: 5000px;
   background-repeat: no-repeat;
   background-size:contain;
 }
@@ -51,6 +51,6 @@ body {
 }
 
 .background2 {
-  background-position:50% 100%;
+  background-position:50% 110%;
 }
 </style>
