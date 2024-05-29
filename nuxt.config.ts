@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@unocss/nuxt', '@nuxt/eslint', 'nuxt-aos'],
+  modules: ['@unocss/nuxt', '@nuxt/eslint', 'nuxt-aos', 'nuxt-swiper'],
   eslint: {
     config: {
       stylistic: true,

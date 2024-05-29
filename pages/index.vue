@@ -5,6 +5,8 @@
       <CompanySection />
       <div class="border-b-solid w-6xl m-a mt-15" />
       <ServiceSection class="mt-[100px]" />
+      <WorksSection />
+      <LinkBanner />
     </div>
   </div>
 </template>
