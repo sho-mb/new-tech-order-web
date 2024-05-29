@@ -498,7 +498,15 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
 
-"@iconify/types@^2.0.0":
+"@iconify/json@^2.2.214":
+  version "2.2.214"
+  resolved "https://registry.npmjs.org/@iconify/json/-/json-2.2.214.tgz"
+  integrity sha512-EVdAczIPBz1gcXVSHrEe0vBl6x4lcG7Dw95tO0o/h2SPTXKigEvV1cufe8yFFNuBHKqv/n1XTwqCZX0ontKTtw==
+  dependencies:
+    "@iconify/types" "*"
+    pathe "^1.1.2"
+
+"@iconify/types@*", "@iconify/types@^2.0.0":
   version "2.0.0"
   resolved "https://registry.npmjs.org/@iconify/types/-/types-2.0.0.tgz"
   integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
@@ -1618,7 +1626,7 @@
   dependencies:
     "@unocss/core" "0.60.3"
 
-"@unocss/preset-icons@0.60.3":
+"@unocss/preset-icons@^0.60.3", "@unocss/preset-icons@0.60.3":
   version "0.60.3"
   resolved "https://registry.npmjs.org/@unocss/preset-icons/-/preset-icons-0.60.3.tgz"
   integrity sha512-L3Ecr36xC+Y8v5WMQcNsGoOzu0HpgNLh5RlC2abs8OyBDGn1k3UqdEFdrhRt3bXpln9b8JkstHO7ZwYPgr2/Cg==
