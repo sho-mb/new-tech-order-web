@@ -16,16 +16,18 @@
     "@nuxt/eslint": "^0.3.13",
     "daisyui": "^3.9.4",
     "nuxt": "^3.11.2",
-    "unocss": "^0.60.3",
     "unocss-preset-daisy": "^7.0.0",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
+    "@iconify/json": "^2.2.214",
     "@types/aos": "^3.0.7",
     "@unocss/nuxt": "^0.60.3",
+    "@unocss/preset-icons": "^0.60.3",
     "lint-staged": "^15.2.4",
-    "nuxt-aos": "^1.2.4"
+    "nuxt-aos": "^1.2.4",
+    "unocss": "^0.60.3"
   },
   "lint-staged": {
     "*.{vue, ts, js,js,jsx,ts,tsx,vue,css,html,md,json,cjs}": "eslint . --fix"

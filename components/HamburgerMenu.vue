@@ -9,7 +9,7 @@
       <span class="hamburger-icon" />
       <span class="hamburger-icon" />
     </button>
-    <transition name="fade">
+    <Transition name="humberger">
       <nav
         v-if="isOpen"
         class="hamburger-menu"
@@ -24,7 +24,7 @@
           </ul>
         </div>
       </nav>
-    </transition>
+    </Transition>
   </div>
 </template>
 
@@ -92,11 +92,13 @@ function toggleMenu() {
 
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.4s ease-in;
+.humberger-enter-active,
+.humberger-leave-active {
+  transition: opacity 0.4s ease;
 }
 
-.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+.humberger-enter,
+.humberger-leave-to {
   opacity: 0;
 }
 

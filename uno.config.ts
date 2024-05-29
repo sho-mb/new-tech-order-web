@@ -1,4 +1,4 @@
-import { presetUno, presetWebFonts, defineConfig } from 'unocss'
+import { presetUno, presetWebFonts, defineConfig, presetIcons } from 'unocss'
 import { presetDaisy } from 'unocss-preset-daisy'
 
 export default defineConfig({
@@ -9,6 +9,13 @@ export default defineConfig({
       themes: ['light'],
       base: false,
     }),
+    presetIcons({
+      // options
+      prefix: 'i-',
+      extraProperties: {
+        display: 'inline-block',
+      },
+    }),
     presetWebFonts({
       provider: 'google',
       fonts: {
@@ -16,4 +23,9 @@ export default defineConfig({
       },
     }),
   ],
+  theme: {
+    container: {
+      center: true,
+    },
+  },
 })

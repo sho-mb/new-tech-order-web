@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black py-2">
-    <div class="container m-auto flex justify-between items-center">
+    <div class="container m-auto flex justify-between items-center max-w-[1240px]">
       <div class="flex items-center">
         <img
           width="50"
