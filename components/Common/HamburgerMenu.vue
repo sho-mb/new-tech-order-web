@@ -19,8 +19,13 @@
           @click="toggleMenu"
         >
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/campany">Campany</a></li>
+            <li><a href="#top">Top</a></li>
+            <li><a href="#company">Company</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#works">Works</a></li>
+            <li>
+              <a href="#Contact">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>

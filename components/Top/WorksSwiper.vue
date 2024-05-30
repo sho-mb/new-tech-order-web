@@ -17,7 +17,7 @@
         v-for="work in works"
         :key="work.id"
       >
-        <WorksCard
+        <TopWorksCard
           :category="work.category"
           :content="work.content"
           :tag="work.tag"

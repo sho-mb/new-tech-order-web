@@ -1,6 +1,6 @@
 <template>
   <div>
-    <MainTitleAnimation />
+    <TopMainTitleAnimation />
     <div class="text-md">
       <p>Write something about your company policy and motivation.<br>Goal and stuff such as </p>
 
@@ -14,7 +14,7 @@
       <p>Influencing is power!</p>
       <div class="mt-8">
         <NuxtLink
-          to="/campany"
+          to="/company"
           class="underline-white! decoration-underline"
         >
           Learn more
