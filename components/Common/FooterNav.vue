@@ -33,12 +33,12 @@
           <div class="flex justify-between">
             <div class="ml-20">
               <ul class="list-none m-0">
-                <li><a href="#top">Top</a></li>
-                <li><a href="#company">Company</a></li>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#works">Works</a></li>
+                <li><a href="/#top">Top</a></li>
+                <li><a href="/#company">Company</a></li>
+                <li><a href="/#service">Service</a></li>
+                <li><a href="/#works">Works</a></li>
                 <li class="m-0">
-                  <a href="#Contact">Contact</a>
+                  <a href="/#Contact">Contact</a>
                 </li>
               </ul>
             </div>

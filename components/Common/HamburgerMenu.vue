@@ -19,12 +19,12 @@
           @click="toggleMenu"
         >
           <ul>
-            <li><a href="#top">Top</a></li>
-            <li><a href="#company">Company</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#works">Works</a></li>
+            <li><a href="/#top">Top</a></li>
+            <li><a href="/#company">Company</a></li>
+            <li><a href="/#service">Service</a></li>
+            <li><a href="/#works">Works</a></li>
             <li>
-              <a href="#Contact">Contact</a>
+              <a href="/#Contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -56,7 +56,7 @@ function toggleMenu() {
   cursor: pointer;
   padding: 0;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hamburger-icon {
@@ -82,7 +82,7 @@ function toggleMenu() {
 }
 
 .hamburger-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -92,9 +92,8 @@ function toggleMenu() {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 0;
+  z-index: 1;
   opacity: 0.9;
-
 }
 
 .humberger-enter-active,
