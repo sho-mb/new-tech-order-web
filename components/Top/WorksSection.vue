@@ -8,7 +8,7 @@
     </p>
 
     <div class="mt-10">
-      <WorksSwiper :works="works" />
+      <TopWorksSwiper :works="works" />
     </div>
   </div>
 </template>

@@ -8,17 +8,17 @@
         class="background2"
         :style="{ backgroundImage: `url(${backgroundFlip})` }"
       >
-        <HeroImage />
+        <TopHeroImage />
         <div class="container mx-auto max-w-[1240px]">
-          <CompanySection id="company" />
+          <TopCompanySection id="company" />
           <div class="border-b-solid w-6xl m-a mt-15" />
-          <ServiceSection
+          <TopServiceSection
             id="service"
             class="mt-[100px]"
           />
-          <WorksSection id="works" />
-          <LinkBanner class="mt-[100px]" />
-          <ContactSection class="mt-[60px]" />
+          <TopWorksSection id="works" />
+          <TopLinkBanner class="mt-[100px]" />
+          <CommonContactSection class="mt-[60px]" />
         </div>
       </div>
     </div>

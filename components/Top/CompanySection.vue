@@ -1,6 +1,6 @@
 <template>
   <div>
-    <MainTitleAnimation />
+    <TopMainTitleAnimation />
     <div class="text-md">
       <p>Write something about your company policy and motivation.<br>Goal and stuff such as </p>
 

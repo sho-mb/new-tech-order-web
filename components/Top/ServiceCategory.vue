@@ -7,7 +7,7 @@
       <p v-html="serviceContent" />
     </div>
     <div class="flex flex-wrap justify-between ">
-      <ViewCard
+      <TopViewCard
         v-for="card in cards"
         :id="card.id"
         :key="card.id"

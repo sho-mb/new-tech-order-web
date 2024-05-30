@@ -3,7 +3,7 @@
     <h2 class="font-montserrat text-4xl">
       Service
     </h2>
-    <ServiceCategory
+    <TopServiceCategory
       v-for="service in services"
       :key="service.serviceTitle"
       :service-title="service.serviceTitle"

@@ -5,7 +5,7 @@
         <div class="flex py-24">
           <div class="flex justify-between w-[45%] items-start">
             <div>
-              <CompanyLogo />
+              <CommonCompanyLogo />
               <div class="mt-1 ml-2">
                 <NuxtLink
                   class="text-white"

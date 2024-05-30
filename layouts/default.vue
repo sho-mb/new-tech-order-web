@@ -1,8 +1,8 @@
 <template>
   <div>
-    <HeaderNav />
+    <CommonHeaderNav />
     <slot />
-    <FooterNav />
+    <CommonFooterNav />
   </div>
 </template>
 
