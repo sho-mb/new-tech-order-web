@@ -9,7 +9,7 @@
         class="mt-[100px]"
       />
       <WorksSection id="works" />
-      <LinkBanner />
+      <LinkBanner class="mt-[100px]" />
       <ContactSection class="mt-[60px]" />
     </div>
   </div>
