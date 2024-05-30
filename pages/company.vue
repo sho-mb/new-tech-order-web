@@ -1,6 +1,6 @@
 <template>
   <div>
-    This is campany page
+    This is company page
   </div>
 </template>
 

@@ -14,7 +14,7 @@
       <p>Influencing is power!</p>
       <div class="mt-8">
         <NuxtLink
-          to="/campany"
+          to="/company"
           class="underline-white! decoration-underline"
         >
           Learn more
