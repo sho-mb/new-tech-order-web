@@ -15,7 +15,7 @@
       <div class="mt-8">
         <NuxtLink
           to="/campany"
-          class="text-white"
+          class="underline-white! decoration-underline"
         >
           Learn more
         </NuxtLink>

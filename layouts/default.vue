@@ -36,13 +36,13 @@ body {
   font-family: "Helvetica", sans-serif;
   margin: 0;
   color: rgb(239, 239, 239);
-  height: 5000px;
+  height: 100%;
   background: #110806;
 }
 
 .background, .background2 {
   width: 100vw;
-  height: 100%;
+  height: 4800px;
   background-repeat: no-repeat;
   background-size:contain;
 }

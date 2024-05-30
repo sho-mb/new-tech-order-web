@@ -10,7 +10,7 @@
       />
       <WorksSection id="works" />
       <LinkBanner />
-      <ContactSection class="mt-[100px]" />
+      <ContactSection class="mt-[60px]" />
     </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="flex h-full==">
     <div class="w-1/2 relative overflow-hidden z-2">
       <div class="zoom-container company">
         <img

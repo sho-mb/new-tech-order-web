@@ -66,9 +66,6 @@
 <style>
 .backgroundFooter {
   background: #A40000;
-  position: absolute;
-  top: -80px;
-  z-index: 1;
 }
 
 a {
