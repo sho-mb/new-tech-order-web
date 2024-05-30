@@ -1,6 +1,6 @@
 <template>
   <div>
-    This is company page
+    <CompanyHeroImage />
   </div>
 </template>
 
