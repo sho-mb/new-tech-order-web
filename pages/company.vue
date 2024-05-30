@@ -1,6 +1,10 @@
 <template>
   <div>
     <CompanyHeroImage />
+    <div class="container">
+      <CompanyDetail class="mt-[100px]" />
+      <CompanyOutlineInformation class="mt-[100px]" />
+    </div>
   </div>
 </template>
 
