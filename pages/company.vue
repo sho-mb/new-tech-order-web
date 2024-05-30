@@ -4,6 +4,8 @@
     <div class="container">
       <CompanyDetail class="mt-[100px]" />
       <CompanyOutlineInformation class="mt-[100px]" />
+      <TopLinkBanner class="mt-[100px]" />
+      <CommonContactSection class="mt-[60px]" />
     </div>
   </div>
 </template>
