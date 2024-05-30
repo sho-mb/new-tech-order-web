@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <div class="w-1/2 relative overflow-hidden">
+    <div class="w-1/2 relative overflow-hidden z-2">
       <div class="zoom-container company">
         <img
           src="/img/company.png"
@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div class="w-1/2 relative overflow-hidden">
+    <div class="w-1/2 relative overflow-hidden z-2">
       <div class="zoom-container influencer">
         <img
           src="/img/influencer.png"

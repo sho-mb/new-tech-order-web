@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ContactCompany />
+    <ContactCompany class="relative -bottom-10" />
   </div>
 </template>
 
