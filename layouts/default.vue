@@ -10,6 +10,7 @@
         :style="{ backgroundImage: `url(${backgroundFlip})` }"
       >
         <slot />
+        <FooterNav />
       </div>
     </div>
   </div>
@@ -41,7 +42,7 @@ body {
 
 .background, .background2 {
   width: 100vw;
-  height: 5000px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size:contain;
 }
