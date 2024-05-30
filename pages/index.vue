@@ -7,6 +7,7 @@
       <ServiceSection class="mt-[100px]" />
       <WorksSection />
       <LinkBanner />
+      <ContactSection class="mt-[100px]" />
     </div>
   </div>
 </template>
