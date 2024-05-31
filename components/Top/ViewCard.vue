@@ -54,7 +54,6 @@ const handleClick = () => {
     emit('cardClicked', props.id, true)
   }
   else {
-    console.log('pass')
     navigateTo('https://www.instagram.com/pop_influencer_kh/', { external: true, open: {
       target: '_blank',
     } })

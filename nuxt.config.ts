@@ -1,6 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@unocss/nuxt', '@nuxt/eslint', 'nuxt-aos', 'nuxt-swiper'],
+  modules: ['@unocss/nuxt', '@nuxt/eslint', 'nuxt-aos', 'nuxt-swiper', ['nuxt-mail', {
+    message: {
+      to: `${process.env.MY_GMAIL}`,
+    },
+    smtp: {
+      service: 'gmail',
+      port: 587,
+      auth: {
+        user: `${process.env.MY_GMAIL}`,
+        pass: `${process.env.APP_PASS}`,
+      },
+    },
+  }]],
   eslint: {
     config: {
       stylistic: true,
