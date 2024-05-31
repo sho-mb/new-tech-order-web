@@ -24,7 +24,7 @@
             <li><a href="/#service">Service</a></li>
             <li><a href="/#works">Works</a></li>
             <li>
-              <a href="/#Contact">Contact</a>
+              <a href="/#contact">Contact</a>
             </li>
           </ul>
         </div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CommonContactCompany class="relative -bottom-10" />
+    <CommonContactLinks class="relative -bottom-10" />
   </div>
 </template>
 

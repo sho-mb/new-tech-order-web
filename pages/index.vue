@@ -18,7 +18,10 @@
           />
           <TopWorksSection id="works" />
           <TopLinkBanner class="mt-[100px]" />
-          <CommonContactSection class="mt-[60px]" />
+          <CommonContactSection
+            id="contact"
+            class="mt-[60px]"
+          />
         </div>
       </div>
     </div>
