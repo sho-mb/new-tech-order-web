@@ -71,7 +71,7 @@
           <label
             for="sns-accounts"
             class="block text-sm font-medium text-white"
-          >SNS Accounts</label>
+          >SNS Accounts (Url of your acc such as IG, youtube etc..)</label>
           <input
             id="sns-accounts"
             v-model="form.snsAccounts"
@@ -141,18 +141,6 @@
             class="mt-1 p-2 block w-full border border-gray-300 rounded-md"
           >
         </div>
-        <div>
-          <label
-            for="media-kit"
-            class="block text-sm font-medium text-white"
-          >Media Kit</label>
-          <input
-            id="media-kit"
-            type="file"
-            class="mt-1 p-2 block w-full border border-gray-300 rounded-md"
-            @change="handleFileUpload"
-          >
-        </div>
         <button
           type="submit"
           class="px-4 py-2 bg-red-800 text-white rounded-md"
@@ -160,12 +148,27 @@
           Submit
         </button>
       </form>
+      <div
+        v-if="successMessage"
+        class="mt-4 p-4 bg-green-500 text-white rounded-md"
+      >
+        {{ successMessage }}
+      </div>
+      <div
+        v-if="errorMessage"
+        class="mt-4 p-4 bg-red-500 text-white rounded-md"
+      >
+        {{ errorMessage }}
+      </div>
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
+
+const successMessage = ref<string | null>(null)
+const errorMessage = ref<string | null>(null)
 
 const form = ref({
   name: '',
@@ -178,14 +181,51 @@ const form = ref({
   collaborations: '',
   bio: '',
   collabType: '',
-  mediaKit: null,
+})
+
+const getInitialFormData = () => ({
+  name: '',
+  email: '',
+  phone: '',
+  location: '',
+  snsAccounts: '',
+  followers: '',
+  genre: '',
+  collaborations: '',
+  bio: '',
+  collabType: '',
 })
 
 const submitForm = () => {
-  console.log('Form submitted:', form.value)
-}
+  const mail = useMail()
 
-const handleFileUpload = (event) => {
-  form.value.mediaKit = event.target.files[0]
+  try {
+    mail.send({
+      from: `${form.value.name}`,
+      subject: 'Influencer send you request from website',
+      html:
+      `
+        <p>Name : ${form.value.name} </p>
+        <p>Email : ${form.value.email} </p>
+        <p>Phone: ${form.value.phone} </p>
+        <p>Location : ${form.value.location} </p>
+        <p>SNS Account : ${form.value.snsAccounts} </p>
+        <p>Followers : ${form.value.followers} </p>
+        <p>Genre : ${form.value.genre} </p>
+        <p>Collaborations works : ${form.value.collaborations} </p> 
+        <p>Bio : </p>
+        <p>${form.value.bio} </p>
+        <p>Preferred Collaboration Type : ${form.value.collabType}</p>
+      `,
+    })
+
+    successMessage.value = 'Your message has been sent successfully!'
+    errorMessage.value = null
+    form.value = getInitialFormData()
+  }
+  catch (err) {
+    errorMessage.value = 'There was an error sending your message. Please try again.'
+    successMessage.value = null
+  }
 }
 </script>
