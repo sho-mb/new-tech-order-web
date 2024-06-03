@@ -182,12 +182,25 @@
         >
           Submit
         </button>
+        <NuxtTurnstile />
       </form>
+      <div
+        v-if="successMessage"
+        class="mt-4 p-4 bg-green-500 text-white rounded-md"
+      >
+        {{ successMessage }}
+      </div>
+      <div
+        v-if="errorMessage"
+        class="mt-4 p-4 bg-red-500 text-white rounded-md"
+      >
+        {{ errorMessage }}
+      </div>
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 
 const form = ref({
@@ -204,7 +217,82 @@ const form = ref({
   contactMethod: '',
 })
 
-const submitForm = () => {
-  console.log('Form submitted:', form.value)
+const successMessage = ref<string | null>(null)
+const errorMessage = ref<string | null>(null)
+
+const getInitialFormData = () => ({
+  companyName: '',
+  contactName: '',
+  position: '',
+  email: '',
+  phone: '',
+  address: '',
+  website: '',
+  inquiry: '',
+  services: '',
+  budget: null,
+  contactMethod: '',
+})
+
+const submitForm = async () => {
+  const mail = useMail()
+
+  try {
+    mail.send({
+      from: `${form.value.companyName}`,
+      subject: 'Some company send you request from website',
+      html:
+      `
+        <p>Copany name : ${form.value.companyName} </p>
+        <p>Contact name : ${form.value.contactName} </p>
+        <p>Position : ${form.value.position} </p>
+        <p>Email : ${form.value.email} </p>
+        <p>Phone: ${form.value.phone} </p>
+        <p>Address : ${form.value.address} </p>
+        <p>Website : ${form.value.website} </p>
+        <p>Inquiry : </p> 
+        <p>${form.value.inquiry} </p>
+        <p>Services : ${getServices(form.value.services)} </p>
+        <p>Budget : ${form.value.budget} USD</p>
+        <p>ContactMethod : ${getMethod(form.value.contactMethod)} </p>
+      `,
+    })
+
+    successMessage.value = 'Your message has been sent successfully!'
+    errorMessage.value = null
+    form.value = getInitialFormData()
+  }
+  catch (err) {
+    errorMessage.value = 'There was an error sending your message. Please try again.'
+    successMessage.value = null
+  }
+}
+
+function getMethod(selectedValue: string): string {
+  switch (selectedValue) {
+    case 'email':
+      return 'Email'
+    case 'phone':
+      return 'Phone'
+    default:
+      return 'Internal Error'
+  }
+}
+
+function getServices(selectedValue: string): string {
+  switch (selectedValue) {
+    case 'marketing':
+      return 'Influencer Marketing'
+    case 'sns':
+      return 'SNS Operation'
+    case 'event':
+      return 'Event'
+    case 'video':
+      return 'Video Production'
+    case 'web':
+      return 'Web Development'
+    default:
+      return 'Internal Error'
+  }
 }
 </script>

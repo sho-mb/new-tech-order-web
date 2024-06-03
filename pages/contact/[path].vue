@@ -14,7 +14,6 @@ const currentPath = ref()
 
 if (router.params.path)
   currentPath.value = router.params.path
-console.log(router.params.path)
 </script>
 
 <style>
