@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   '@nuxtjs/turnstile',
   ],
   turnstile: {
-    siteKey: `${process.env.DUMMY_SITE_KEY}`,
+    siteKey: `${process.env.CLOUDFLARE_SITE_KEY}`,
   },
   eslint: {
     config: {
