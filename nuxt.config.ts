@@ -12,7 +12,12 @@ export default defineNuxtConfig({
         pass: `${process.env.APP_PASS}`,
       },
     },
-  }]],
+  }],
+  '@nuxtjs/turnstile',
+  ],
+  turnstile: {
+    siteKey: `${process.env.DUMMY_SITE_KEY}`,
+  },
   eslint: {
     config: {
       stylistic: true,

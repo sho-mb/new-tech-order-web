@@ -147,6 +147,7 @@
         >
           Submit
         </button>
+        <NuxtTurnstile />
       </form>
       <div
         v-if="successMessage"

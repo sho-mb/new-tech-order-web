@@ -182,6 +182,7 @@
         >
           Submit
         </button>
+        <NuxtTurnstile />
       </form>
       <div
         v-if="successMessage"
@@ -233,7 +234,7 @@ const getInitialFormData = () => ({
   contactMethod: '',
 })
 
-const submitForm = () => {
+const submitForm = async () => {
   const mail = useMail()
 
   try {
