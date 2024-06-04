@@ -1,10 +1,13 @@
 <template>
   <div class="mb-[100px]">
     <div class="mb-12">
-      <h3 class="font-normal text-3xl mb-4">
+      <h3 class="font-normal text-4 md:text-3xl mb-4">
         {{ serviceTitle }}
       </h3>
-      <p v-html="serviceContent" />
+      <p
+        class="text-3"
+        v-html="serviceContent"
+      />
     </div>
     <div class="flex flex-wrap justify-between ">
       <TopViewCard

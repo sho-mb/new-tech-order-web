@@ -9,12 +9,15 @@
         :style="{ backgroundImage: `url(${backgroundFlip})` }"
       >
         <TopHeroImage />
-        <div class="container mx-auto max-w-[1240px]">
-          <TopCompanySection id="company" />
-          <div class="border-b-solid w-6xl m-a mt-15" />
+        <div class="px-4 container mx-auto max-w-[1240px] md:px-0">
+          <TopCompanySection
+            id="company"
+            class="mt-12 md:mt-0"
+          />
+          <div class="w-[300px] border-b-solid md:w-6xl m-a mt-15" />
           <TopServiceSection
             id="service"
-            class="mt-[100px]"
+            class="mt-[50px] md:mt-[100px]"
           />
           <TopWorksSection id="works" />
           <TopLinkBanner class="mt-[100px]" />

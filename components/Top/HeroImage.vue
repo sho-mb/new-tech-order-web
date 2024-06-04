@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="pt-4 w-full md:pt-0">
     <img
       src="/img/hero.png"
       class="w-full"

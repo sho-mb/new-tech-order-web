@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="font-montserrat text-4xl">
+    <h2 class="font-montserrat text-5 md:text-4xl">
       Service
     </h2>
     <TopServiceCategory
