@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-[100px]">
+  <div class="md:mb-[100px]">
     <div class="mb-12">
       <h3 class="font-normal text-4 mb-4">
         {{ serviceTitle }}
@@ -27,7 +27,6 @@
             :is-pop="card.isPop"
             :background-url="card.backgroundUrl"
             :title="card.title"
-            class="mt-a"
             @card-clicked="handleCardClicked"
           />
         </SwiperSlide>
@@ -41,12 +40,6 @@
         :class="{ 'modal-open': showModal }"
       >
         <div class="modal-box text-gray-300">
-          <div class="w-full text-center">
-            <img
-              class="object-contain w-200px"
-              :src="data.url"
-            >
-          </div>
           <div class="w-80% m-a">
             <p class="text-2xl">
               {{ data.text }}
