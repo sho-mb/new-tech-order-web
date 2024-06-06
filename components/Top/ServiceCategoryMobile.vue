@@ -1,5 +1,5 @@
 <template>
-  <div class="md:mb-[100px]">
+  <div class="mb-50px">
     <div class="mb-12">
       <h3 class="font-normal text-4 mb-4">
         {{ serviceTitle }}

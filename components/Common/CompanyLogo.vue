@@ -2,7 +2,7 @@
   <NuxtLink to="/">
     <div class="flex items-center">
       <img
-        class="md:w-[50px] w-6"
+        class="md:w-[50px] w-8"
         src="~/assets/svg/white.svg"
         alt="New tech order logo"
       >
