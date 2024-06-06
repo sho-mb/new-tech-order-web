@@ -20,7 +20,7 @@
             class="mt-[50px] md:mt-[100px]"
           />
           <TopWorksSection id="works" />
-          <TopLinkBanner class="mt-[100px]" />
+          <!-- <TopLinkBanner class="mt-[100px]" /> -->
           <CommonContactSection
             id="contact"
             class="mt-[60px]"

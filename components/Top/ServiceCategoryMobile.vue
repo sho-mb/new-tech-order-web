@@ -1,24 +1,37 @@
 <template>
   <div class="mb-[100px]">
     <div class="mb-12">
-      <h3 class="font-normal text-3xl mb-4">
+      <h3 class="font-normal text-4 mb-4">
         {{ serviceTitle }}
       </h3>
       <p
-        class="text-4"
+        class="text-3"
         v-html="serviceContent"
       />
     </div>
-    <div class="flex flex-wrap justify-between">
-      <TopViewCard
-        v-for="card in cards"
-        :id="card.id"
-        :key="card.id"
-        :is-pop="card.isPop"
-        :background-url="card.backgroundUrl"
-        :title="card.title"
-        @card-clicked="handleCardClicked"
-      />
+    <div>
+      <Swiper
+        :width="280"
+        :modules="[SwiperEffectCoverflow]"
+        :slides-per-view="1"
+        :centered-slides="true"
+        :effect="'coverflow'"
+      >
+        <SwiperSlide
+          v-for="card in cards"
+          :key="card.id"
+        >
+          <TopViewCard
+            :id="card.id"
+            :key="card.id"
+            :is-pop="card.isPop"
+            :background-url="card.backgroundUrl"
+            :title="card.title"
+            class="mt-a"
+            @card-clicked="handleCardClicked"
+          />
+        </SwiperSlide>
+      </Swiper>
     </div>
 
     <Transition name="dialog">
@@ -27,19 +40,19 @@
         class="modal bg-black bg-op-95"
         :class="{ 'modal-open': showModal }"
       >
-        <div class="modal-box text-gray-300 flex gap-14 w-6xl items-center">
-          <div class="w-1/2">
+        <div class="modal-box text-gray-300">
+          <div class="w-full text-center">
             <img
-              class="object-contain w-140 h-80"
+              class="object-contain w-200px"
               :src="data.url"
             >
           </div>
-          <div class="w-1/2">
-            <p class="text-4xl">
+          <div class="w-80% m-a">
+            <p class="text-2xl">
               {{ data.text }}
             </p>
             <p
-              class="leading-normal"
+              class="text-sm"
               v-html="data.content"
             />
           </div>

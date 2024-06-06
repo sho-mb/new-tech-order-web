@@ -9,6 +9,15 @@
       :service-title="service.serviceTitle"
       :service-content="service.serviceContent"
       :cards="service.cards"
+      class="md:block hidden"
+    />
+    <TopServiceCategoryMobile
+      v-for="service in services"
+      :key="service.serviceTitle"
+      :service-title="service.serviceTitle"
+      :service-content="service.serviceContent"
+      :cards="service.cards"
+      class="md:hidden"
     />
   </div>
 </template>
@@ -22,8 +31,6 @@ const initialData = {
   cards: [{
     id: 0,
     isPop: false,
-    height: 0,
-    width: 0,
     backgroundUrl: '',
     title: '',
   }],
