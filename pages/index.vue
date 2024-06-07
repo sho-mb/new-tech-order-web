@@ -9,7 +9,7 @@
         :style="{ backgroundImage: `url(${backgroundFlip})` }"
       >
         <TopHeroImage />
-        <div class="px-4 container mx-auto max-w-[1240px] md:px-0">
+        <div class="container mx-auto max-w-[1240px] md:px-0">
           <TopCompanySection
             id="company"
             class="mt-12 md:mt-0"
@@ -20,7 +20,7 @@
             class="mt-[50px] md:mt-[100px]"
           />
           <TopWorksSection id="works" />
-          <!-- <TopLinkBanner class="mt-[100px]" /> -->
+          <!-- <TopLinkBanner class="mt-[100px]" /> --> -->
           <CommonContactSection
             id="contact"
             class="mt-[60px]"
@@ -54,5 +54,13 @@ definePageMeta({
 
 .background2 {
   background-position:20% 150%;
+}
+
+@media (min-width: 380px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 380px;
+  }
 }
 </style>
