@@ -1,6 +1,6 @@
 <template>
-  <div class="flex">
-    <div class="w-1/2 relative overflow-hidden z-2">
+  <div class="md:flex">
+    <div class="md:w-1/2 contactCard">
       <NuxtLink to="/contact/company">
         <div class="zoom-container company">
           <img
@@ -8,7 +8,7 @@
             class="zoom-image"
           >
         </div>
-        <div class="absolute top-50% mt-[-20%] left-20%">
+        <div class="contactMessage">
           <h2 class="text-4xl">
             Contact<br>for Company
           </h2>
@@ -19,7 +19,7 @@
       </NuxtLink>
     </div>
 
-    <div class="w-1/2 relative overflow-hidden z-2">
+    <div class="md:w-1/2 contactCard">
       <NuxtLink to="/contact/influencer">
         <div class="zoom-container influencer">
           <img
@@ -27,7 +27,7 @@
             class="zoom-image"
           >
         </div>
-        <div class="absolute top-50% mt-[-20%] left-20%">
+        <div class="contactMessage">
           <h2 class="text-4xl">
             Contact<br>for influencer
           </h2>
@@ -50,11 +50,11 @@
 }
 
 .company {
-  border-radius: 45px 0 0 45px;
+  border-radius: 45px 45px 0 0;
 }
 
 .influencer {
-  border-radius: 0 45px 45px 0;
+  border-radius: 0 0 45px 45px;
 }
 
 .zoom-image {
@@ -65,5 +65,36 @@
 
 .zoom-image:hover {
   transform: scale(1.2);
+}
+
+.contactCard {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.contactMessage {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .company {
+   border-radius: 45px 0 0 45px;
+  }
+
+  .influencer {
+    border-radius: 0 45px 45px 0;
+  }
+
+  .contactMessage {
+    position: absolute;
+    top: 50%;
+    margin-top: -20%;
+    left: 20%;
+    color: white;
+  }
 }
 </style>
