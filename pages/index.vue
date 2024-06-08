@@ -53,7 +53,7 @@ definePageMeta({
 }
 
 .background2 {
-  background-position:20% 150%;
+  background-position:0% 90%;
 }
 
 @media (min-width: 380px) {
@@ -68,12 +68,18 @@ definePageMeta({
   .container {
     max-width: 640px;
   }
+
+  .background2 {
+    background-position:20% 150%;
+  }
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;

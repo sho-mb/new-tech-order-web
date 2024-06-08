@@ -1,6 +1,6 @@
 <template>
-  <div class="mb-50px">
-    <div class="mb-12">
+  <div class="mb-25px">
+    <div class="mb-8">
       <h3 class="font-normal text-4 mb-4">
         {{ serviceTitle }}
       </h3>
@@ -11,7 +11,7 @@
     </div>
     <div>
       <Swiper
-        :width="280"
+        :width="260"
         :modules="[SwiperEffectCoverflow]"
         :slides-per-view="1"
         :centered-slides="true"

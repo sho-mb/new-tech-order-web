@@ -15,7 +15,7 @@
       <div class="mt-8 md:text-4">
         <NuxtLink
           to="/company"
-          class="underline-white! decoration-underline"
+          class="underline-white! decoration-underline text-white"
         >
           Learn more
         </NuxtLink>
