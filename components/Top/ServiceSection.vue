@@ -35,6 +35,7 @@ const initialData = {
     isPop: false,
     backgroundUrl: '',
     title: '',
+    height: 0,
   }],
 }
 const services = ref([initialData])

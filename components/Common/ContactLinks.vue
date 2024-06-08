@@ -23,7 +23,7 @@
       <NuxtLink to="/contact/influencer">
         <div class="zoom-container influencer">
           <img
-            src="/img/influencer.png"
+            src="/img/influencer.jpg"
             class="zoom-image"
           >
         </div>

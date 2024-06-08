@@ -17,6 +17,7 @@
         :is-pop="card.isPop"
         :background-url="card.backgroundUrl"
         :title="card.title"
+        :height="card.height"
         @card-clicked="handleCardClicked"
       />
     </div>
@@ -71,6 +72,7 @@ defineProps({
       isPop: boolean
       backgroundUrl: string
       title: string
+      height: number
     }>>,
     required: true,
     default: () => [],

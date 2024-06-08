@@ -1,12 +1,12 @@
 <template>
   <div
     data-aos="flip-left"
-    class="w-full"
+    class="w-full h-full rounded-3xl overflow-hidden"
   >
     <NuxtLink to="https://www.instagram.com/p/C68-rq2hlKF/?img_index=1">
       <img
-        class="w-full"
-        src="/img/banner.png"
+        class="w-full object-cover h-full"
+        src="/img/banner.jpg"
       >
     </NuxtLink>
   </div>
