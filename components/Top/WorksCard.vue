@@ -1,12 +1,12 @@
 <template>
   <div class="bg-white w-90% h-350px md:w-[320px] md:h-[400px] rounded-3xl cursor-pointer">
-    <div class="w-full h-165px md:w-[320px] md:h-[400px] rounded-3xl">
+    <div class="w-full h-165px md:w-[320px] rounded-3xl">
       <img
         src="/img/works.png"
         class="object-cover w-full"
       >
     </div>
-    <div class="p-3 md:p-6">
+    <div class="p-3 mt-8 md:p-6">
       <div class="text-gray-3 mb-4">
         {{ category }}
       </div>

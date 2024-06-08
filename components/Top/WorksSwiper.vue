@@ -4,7 +4,7 @@
       class="drop-shadow-xl shadow-black"
       :modules="[SwiperEffectCreative, SwiperNavigation, SwiperFreeMode]"
       :pagination="{ clickable: true }"
-      :space-between="70"
+      :space-between="25"
       :slides-per-view="3.8"
       :free-mode="true"
       :navigation="true"

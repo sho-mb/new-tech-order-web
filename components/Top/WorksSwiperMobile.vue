@@ -33,31 +33,4 @@ defineProps<{ works: Work[] }>()
 </script>
 
 <style>
-/* .swiperWidth {
-  width: calc(100% + (100vw - 100%) / 2);
-} */
-
-/* .swiper-button-next:after {
-  background-color: black;
-  padding: 16px 24px;
-  border-radius: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.swiper-button-next:hover:after {
-  opacity: 0.8;
-}
-
-.swiper-button-prev:after {
-  background-color: black;
-  padding: 16px 24px;
-  border-radius: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.swiper-button-prev:hover:after {
-  opacity: 0.8;
-} */
 </style>
