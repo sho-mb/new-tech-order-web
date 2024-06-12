@@ -1,7 +1,7 @@
 <template>
   <div
     class="flex justify-between"
-    data-aos="zoom-out"
+    data-aos="zoom-in"
   >
     <div class="px-40">
       <img
