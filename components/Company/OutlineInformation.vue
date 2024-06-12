@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-between">
-    <h2 class="text-6xl font-montserrat">
+    <h2 class="text-6xl font-montserrat m-0">
       Outline
     </h2>
 
@@ -11,7 +11,7 @@
       >
         <div class="border-b-solid border-white" />
         <div class="flex items-center py-6 justify-between">
-          <div class="text-2xl mr-30 font-semibold">
+          <div class="text-xl mr-30 font-semibold">
             {{ info.head }}
           </div>
           <div class="text-xl w-[60%]">
