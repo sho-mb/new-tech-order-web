@@ -12,7 +12,7 @@
         <div class="container mx-auto md:px-0">
           <TopCompanySection
             id="company"
-            class="mt-12 md:mt-0"
+            class="mt-8 md:mt-0"
           />
           <div class="w-[300px] border-b-solid md:w-6xl m-a mt-15" />
           <TopServiceSection
@@ -20,10 +20,10 @@
             class="mt-[50px] md:mt-[100px]"
           />
           <TopWorksSection id="works" />
-          <TopLinkBanner class="mt-[100px]" />
+          <TopLinkBanner class="mt-[50px] md:mt-[100px]" />
           <CommonContactSection
             id="contact"
-            class="mt-[60px]"
+            class="mt-[30px] md:mt-[50px]"
           />
         </div>
       </div>
@@ -53,14 +53,14 @@ definePageMeta({
 }
 
 .background2 {
-  background-position:0% 90%;
+  background-position:0% 120%;
 }
 
-@media (min-width: 380px) {
+@media (min-width: 360px) {
   .container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 380px;
+    max-width: 360px;
   }
 }
 
