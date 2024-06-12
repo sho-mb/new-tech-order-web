@@ -29,7 +29,7 @@ const informations = [
 
   { head: 'Company name', data: 'New Tech Order' },
   { head: 'Established', data: '22 FEB 2024' },
-  { head: 'Address', data: '#443, TTP 1, KhanChamKarmom, Phnom Phen' },
+  { head: 'Address', data: 'PTH Modern apartment #22D st.368,BKK3,Phnompenh ,Cambodia' },
   { head: 'CEO', data: 'Outa Fujita' },
   { head: 'Bussiness', data: 'Marketing / Production / Influencer' },
   { head: 'Contact', data: 'outa0608@ntwcambodia.com' },
