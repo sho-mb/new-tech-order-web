@@ -92,7 +92,7 @@ definePageMeta({
 }
 @media (min-width: 1536px) {
   .container {
-    max-width: 1536px;
+    max-width: 1240px
   }
 }
 </style>

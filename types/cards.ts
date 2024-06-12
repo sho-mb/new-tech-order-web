@@ -61,7 +61,7 @@ export const servicesDetail = [
   },
   {
     text: 'EVENT',
-    content: 'Our event hosting service provides total support from planning to execution and management to realize our clients\' vision. <br />We offer customized events tailored to our clients\' needs and goals, focusing on delivering engaging experiences to participants. Our professional team brings creative ideas to life and ensures the smooth progress of events.<br /> Our goal is for clients to achieve their objectives through impressive events and receive high satisfaction from participants\' feedback.',
+    content: 'Our event hosting service provides total support from planning to execution and management to realize our clients\' vision. <br />We offer customized events tailored to our clients\' needs and goals, focusing on delivering engaging experiences to participants. .<br />Our professional team brings creative ideas to life and ensures the smooth progress of events.<br /> Our goal is for clients to achieve their objectives through impressive events and receive high satisfaction from participants\' feedback.',
     url: '/img/card03.png',
   },
   {
