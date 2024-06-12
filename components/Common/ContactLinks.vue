@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <div class="w-1/2 relative overflow-hidden z-2">
+    <div class="w-1/2 contactCard">
       <NuxtLink to="/contact/company">
         <div class="zoom-container company">
           <img
@@ -8,30 +8,30 @@
             class="zoom-image"
           >
         </div>
-        <div class="absolute top-50% mt-[-20%] left-20%">
-          <h2 class="text-4xl">
+        <div class="contactMessage">
+          <h2 class="text-5 md:text-4xl">
             Contact<br>for Company
           </h2>
-          <p class="font-bold">
+          <p class="font-bold hidden md:block">
             Get inference to work together <br>Let's get in touch
           </p>
         </div>
       </NuxtLink>
     </div>
 
-    <div class="w-1/2 relative overflow-hidden z-2">
+    <div class="w-1/2 contactCard">
       <NuxtLink to="/contact/influencer">
         <div class="zoom-container influencer">
           <img
-            src="/img/influencer.png"
+            src="/img/influencer.jpg"
             class="zoom-image"
           >
         </div>
-        <div class="absolute top-50% mt-[-20%] left-20%">
-          <h2 class="text-4xl">
+        <div class="contactMessage">
+          <h2 class="text-5 md:text-4xl">
             Contact<br>for influencer
           </h2>
-          <p class="font-bold">
+          <p class="font-bold hidden md:block">
             Work together to get opportunities <br>Let's get in touch
           </p>
         </div>
@@ -45,25 +45,57 @@
 <style>
 .zoom-container {
   overflow: hidden;
+  margin: auto;
   width: 100%;
-  height: 100%;
+  height: 160px;
 }
-
 .company {
-  border-radius: 45px 0 0 45px;
-}
+   border-radius: 45px 0 0 45px;
+  }
 
-.influencer {
-  border-radius: 0 45px 45px 0;
-}
+  .influencer {
+    border-radius: 0 45px 45px 0;
+  }
 
 .zoom-image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   transition: transform 0.2s;
 }
 
 .zoom-image:hover {
   transform: scale(1.2);
+}
+
+.contactCard {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.contactMessage {
+    position: absolute;
+    top: 50%;
+    margin-top: -20%;
+    left: 20%;
+    color: white;
+  }
+
+@media (min-width: 768px) {
+  .company {
+   border-radius: 45px 0 0 45px;
+  }
+
+  .influencer {
+    border-radius: 0 45px 45px 0;
+  }
+
+  .zoom-container {
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>

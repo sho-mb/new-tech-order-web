@@ -2,11 +2,11 @@
   <NuxtLink to="/">
     <div class="flex items-center">
       <img
-        width="50"
+        class="md:w-[50px] w-8"
         src="~/assets/svg/white.svg"
         alt="New tech order logo"
       >
-      <div class="tracking-widest">
+      <div class="tracking-widest hidden md:block">
         <div class="font-bold">
           EW TECH ORDER
         </div>

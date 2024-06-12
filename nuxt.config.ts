@@ -46,15 +46,6 @@ export default defineNuxtConfig({
       },
     },
   },
-  vite: {
-    css: {
-      preprocessorOptions: {
-        sass: {
-          additionalData: '@use "~/assets/_colors.sass" as *\n',
-        },
-      },
-    },
-  },
   aos: {
     disable: false,
     startEvent: 'DOMContentLoaded',

@@ -6,7 +6,7 @@
       data-aos-duration="4000"
     >
       <h1
-        class="text-5xl p-5"
+        class="text-4 p-2 md:text-5xl md:p-5"
         data-aos="fade-up"
         data-aos-duration="2000"
       >
@@ -19,7 +19,7 @@
       data-aos-duration="4000"
     >
       <h1
-        class="text-5xl p-5"
+        class="text-4 p-2 md:text-5xl md:p-5"
         data-aos="fade-up"
         data-aos-duration="2000"
       >

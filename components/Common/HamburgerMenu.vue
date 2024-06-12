@@ -18,7 +18,7 @@
           class="out-box"
           @click="toggleMenu"
         >
-          <ul>
+          <ul class="p-0">
             <li><a href="/#top">Top</a></li>
             <li><a href="/#company">Company</a></li>
             <li><a href="/#service">Service</a></li>
@@ -50,7 +50,7 @@ function toggleMenu() {
   justify-content: space-around;
   align-items: center;
   width: 40px;
-  height: 30px;
+  height: 24px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -60,7 +60,7 @@ function toggleMenu() {
 }
 
 .hamburger-icon {
-  width: 28px;
+  width: 24px;
   height: 2px;
   background-color: #f9f9f9;
   border-radius: 3px;
@@ -69,7 +69,7 @@ function toggleMenu() {
 }
 
 .hamburger-button.open .hamburger-icon:nth-child(1) {
-  transform: rotate(45deg) translate(4px, 10px);
+  transform: rotate(45deg) translate(4px, 7px);
 }
 
 .hamburger-button.open .hamburger-icon:nth-child(2) {
@@ -78,7 +78,7 @@ function toggleMenu() {
 }
 
 .hamburger-button.open .hamburger-icon:nth-child(3) {
-  transform: rotate(-45deg) translate(4px, -10px);
+  transform: rotate(-45deg) translate(4px, -7px);
 }
 
 .hamburger-menu {
@@ -126,5 +126,16 @@ function toggleMenu() {
 .hamburger-menu li a {
   text-decoration: none;
   color: #f1f1f1;
+}
+
+@media (min-width: 768px) {
+  .hamburger-icon {
+    width: 28px;
+    height: 2px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    position: relative;
+  }
 }
 </style>

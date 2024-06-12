@@ -4,18 +4,20 @@
       <h3 class="font-normal text-3xl mb-4">
         {{ serviceTitle }}
       </h3>
-      <p v-html="serviceContent" />
+      <p
+        class="text-4"
+        v-html="serviceContent"
+      />
     </div>
-    <div class="flex flex-wrap justify-between ">
+    <div class="flex flex-wrap justify-between">
       <TopViewCard
         v-for="card in cards"
         :id="card.id"
         :key="card.id"
         :is-pop="card.isPop"
-        :height="card.height"
-        :width="card.width"
         :background-url="card.backgroundUrl"
         :title="card.title"
+        :height="card.height"
         @card-clicked="handleCardClicked"
       />
     </div>
@@ -69,9 +71,8 @@ defineProps({
       id: number
       isPop: boolean
       backgroundUrl: string
-      width: number
-      height: number
       title: string
+      height: number
     }>>,
     required: true,
     default: () => [],
