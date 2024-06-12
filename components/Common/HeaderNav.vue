@@ -5,7 +5,7 @@
       <div class="flex gap-4">
         <CommonContactButton
           button-title="Get in touch"
-          class="hidden mb:block"
+          class="hidden md:block"
         />
         <CommonHamburgerMenu />
       </div>

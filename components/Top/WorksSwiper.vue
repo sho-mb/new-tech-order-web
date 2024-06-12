@@ -2,10 +2,10 @@
   <div class="relative swiperWidth">
     <Swiper
       class="drop-shadow-xl shadow-black"
-      :modules="[SwiperEffectCreative, SwiperNavigation, SwiperFreeMode]"
+      :modules="[SwiperNavigation, SwiperFreeMode]"
       :pagination="{ clickable: true }"
       :slides-per-view="'auto'"
-      :space-between="50"
+      :space-between="24"
       :free-mode="true"
       :navigation="true"
       :style="{
@@ -39,6 +39,10 @@ defineProps<{ works: Work[] }>()
 </script>
 
 <style>
+.swiper-slide {
+  width: fit-content;
+}
+
 .swiperWidth {
   width: calc(100% + (100vw - 100%) / 2);
 }

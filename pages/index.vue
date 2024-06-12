@@ -21,9 +21,10 @@
           />
           <TopWorksSection id="works" />
           <TopLinkBanner class="mt-[50px] md:mt-[100px]" />
+          <TopDocumentDownloadButton class="mt-[50px] md:mt-[100px]" />
           <CommonContactSection
             id="contact"
-            class="mt-[30px] md:mt-[50px]"
+            class="mt-[20px] md:mt-[60px]"
           />
         </div>
       </div>
