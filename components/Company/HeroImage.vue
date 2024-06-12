@@ -1,20 +1,10 @@
 <template>
   <div>
-    <div class="text-center heroBackground relative">
+    <div class="heroBackground w-full pt-10">
       <img
         src="/img/companyHero.png"
-        class="op-70"
+        class="w-full object-cover"
       >
-      <div class="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
-        <div class="text-left">
-          <h1 class="text-7xl m-0">
-            BE ADVENTURES
-          </h1>
-          <div class="text-4xl font-600">
-            STAND OUT POP. BE YOURSELF.<br>YOU CAN BE SPECIAL.<br>WE GROW UP WITH KHMER <br>INFLUENCERS.
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>

@@ -1,35 +1,33 @@
 <template>
-  <div class="flex justify-between">
-    <div class="p-20">
+  <div
+    class="flex justify-between"
+    data-aos="zoom-in"
+  >
+    <div class="px-40">
       <img
         src="~/assets/svg/white.svg"
         alt="New tech order logo"
-        width="250"
+        width="320"
       >
     </div>
-    <div class="w-[60%]">
-      <h2 class="text-5xl">
-        New Tech Order
-      </h2>
-      <p>Write something about your company policy and motivation. <br>Goal and stuff such as,</p>
-
-      <p>
-        We want to change world here from Cambodia.<br>
-        New generation people are hungry for using their skill with technology.
-      </p>
-
-      <p>
-        Knowing how to use network social to spread positive power? <br>
-        We are going to support all the client business.
-      </p>
-
-      <p>Influencing is power!</p>
+    <div class="w-[50%]">
+      <div class="w-320px">
+        <div
+          class="text-5xl font-bold leading-13"
+          v-html="companyText.logo.title"
+        />
+        <div class="border-b-solid bg-white h-1 mt-4" />
+        <div
+          class="mt-4"
+          v-html="companyText.logo.contents"
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-
+import { companyText } from '~/types/company'
 </script>
 
 <style>
