@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <div class="w-1/2 contactCard">
+    <div class="w-1/2 contactCard ">
       <NuxtLink to="/contact/company">
         <div class="zoom-container company">
           <img
@@ -44,7 +44,7 @@
 
 <style>
 .zoom-container {
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: auto;
   width: 100%;
   height: 160px;
@@ -70,7 +70,6 @@
 
 .contactCard {
   position: relative;
-  overflow: hidden;
   z-index: 2;
 }
 
@@ -96,6 +95,7 @@
     margin: auto;
     width: 100%;
     height: 100%;
+    border: white 1px solid;
   }
 }
 </style>
