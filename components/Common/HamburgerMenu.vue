@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="self-center">
     <button
       class="hamburger-button"
       :class="{ open: isOpen }"
@@ -57,6 +57,14 @@ function toggleMenu() {
   padding: 0;
   position: relative;
   z-index: 2;
+}
+
+.hamburger-button:hover .hamburger-icon:nth-child(1){
+  transform: translate(-12px, 0px);
+}
+
+.hamburger-button:hover .hamburger-icon:nth-child(3){
+  transform: translate(12px, 0px);
 }
 
 .hamburger-icon {
