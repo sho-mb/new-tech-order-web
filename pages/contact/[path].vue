@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-20 bg~white max-w-[1240px]">
+  <div class="container py-20 max-w-[1240px]">
     <ContactCompanyForm v-if="currentPath === 'company'" />
     <ContactInfluencerForm v-else-if="currentPath === 'influencer'" />
     <div v-else>
