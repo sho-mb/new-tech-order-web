@@ -44,17 +44,18 @@
 
 <style>
 .zoom-container {
-  /* overflow: hidden; */
+  overflow: hidden;
   margin: auto;
   width: 100%;
   height: 160px;
+  border: white 1px solid;
 }
 .company {
-   border-radius: 45px 0 0 45px;
+   border-radius: 24px 0 0 24px;
   }
 
   .influencer {
-    border-radius: 0 45px 45px 0;
+    border-radius: 0 24px 24px 0;
   }
 
 .zoom-image {

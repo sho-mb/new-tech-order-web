@@ -24,9 +24,9 @@ a.btn--orange:hover {
 }
 
 a.btn-c {
-  font-size: 1.4rem;
+  font-size: 1rem;
   position: relative;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
   border-radius: 100vh;
 }
 
