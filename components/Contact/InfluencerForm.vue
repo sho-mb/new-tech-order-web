@@ -1,6 +1,6 @@
 <template>
   <div class="p-4 flex justify-between">
-    <div class="w-40%">
+    <div class="w-40% hidden md:block">
       <img
         class="object-fit"
         width="450"
@@ -9,7 +9,7 @@
       >
     </div>
 
-    <div class="w-50%">
+    <div class="md:w-50%">
       <h1 class="text-2xl font-bold mb-4">
         Contact for Influencer
       </h1>
