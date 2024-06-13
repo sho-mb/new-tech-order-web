@@ -9,7 +9,7 @@
         v-for="info in informations"
         :key="info.head"
       >
-        <div class="border-b-solid border-white" />
+        <div class="border-b-solid border-b-white" />
         <div class="flex items-center py-6 justify-between">
           <div class="text-14px md:text-xl md:mr-30 font-semibold">
             {{ info.head }}
@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <div class="border-b-solid border-white" />
+      <div class="border-b-solid border-b-white" />
     </div>
   </div>
 </template>
