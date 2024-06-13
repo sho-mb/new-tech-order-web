@@ -75,9 +75,9 @@ defineProps({
 
 .btn-contact span{
   background: rgb(255,130,130);
-  background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, hsl(0, 0%, 97%) 100%);
-  background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,hsl(0, 0%, 97%)100%);
-  background: linear-gradient(to right,  rgba(255,130,130,1) 0%,hsl(0, 0%, 97%)100%);
+  background: -moz-linear-gradient(left,  hsl(0, 0%, 97%) 0%, hsl(0, 0%, 97%) 100%);
+  background: -webkit-linear-gradient(left,  hsl(0, 0%, 97%) 0%,hsl(0, 0%, 97%)100%);
+  background: linear-gradient(to right,  hsl(0, 0%, 97%) 0%,hsl(0, 0%, 97%)100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
 
   -webkit-background-clip: text;
@@ -86,7 +86,7 @@ defineProps({
 
 .btn-contact:hover svg rect {
     stroke-width: 2;
-    stroke-dasharray: 196, 470;
+    stroke-dasharray: 196, 472;
     stroke-dashoffset: 410;
 }
 </style>
