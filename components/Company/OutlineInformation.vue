@@ -1,25 +1,25 @@
 <template>
-  <div class="flex justify-between">
-    <h2 class="text-6xl font-montserrat m-0">
+  <div class="md:flex justify-between">
+    <h2 class="text-4xl md:text-6xl font-montserrat m-0">
       Outline
     </h2>
 
-    <div class="w-[60%]">
+    <div class="w-full md:w-[60%] mt-4 md:mt-0">
       <div
         v-for="info in informations"
         :key="info.head"
       >
-        <div class="border-b-solid border-white" />
+        <div class="border-b-solid border-b-white" />
         <div class="flex items-center py-6 justify-between">
-          <div class="text-xl mr-30 font-semibold">
+          <div class="text-14px md:text-xl md:mr-30 font-semibold">
             {{ info.head }}
           </div>
-          <div class="text-xl w-[60%]">
+          <div class="text-14px md:text-xl w-[60%]">
             {{ info.data }}
           </div>
         </div>
       </div>
-      <div class="border-b-solid border-white" />
+      <div class="border-b-solid border-b-white" />
     </div>
   </div>
 </template>
