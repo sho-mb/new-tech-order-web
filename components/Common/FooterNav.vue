@@ -10,14 +10,14 @@
                 <NuxtLink
                   class="text-white"
                   target="_blank"
-                  href="https://www.instagram.com/newtechorder_official/"
+                  href="https://www.instagram.com/newtechorder_official?igsh=em50MDlqa3cxcw%3D%3D&utm_source=qr"
                 >
                   <div class="i-fa-brands:instagram w-1em h-1em mr-2" />
                 </NuxtLink>
                 <NuxtLink
                   class="text-white"
                   target="_blank"
-                  href="https://www.facebook.com/profile.php?id=61557019373984&locale=ja_JP"
+                  href="https://www.facebook.com/share/y3SZZNaHFQGgE2cV/?mibextid=LQQJ4d"
                 >
                   <div class="i-fa-brands:facebook w-1em h-1em" />
                 </NuxtLink>
