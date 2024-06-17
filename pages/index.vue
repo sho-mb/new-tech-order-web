@@ -14,7 +14,7 @@
             id="company"
             class="mt-8 md:mt-0"
           />
-          <div class="w-[300px] border-b-solid md:w-6xl m-a mt-15" />
+          <div class="w-[300px] border-b-solid md:w-2xl lg:w-4xl xl:w-6xl m-a mt-15" />
           <TopServiceSection
             id="service"
             class="mt-[50px] md:mt-[100px]"
@@ -83,7 +83,7 @@ definePageMeta({
 
 @media (min-width: 1024px) {
   .container {
-    max-width: 1024px;
+    max-width: 940px;
   }
 }
 @media (min-width: 1240px) {

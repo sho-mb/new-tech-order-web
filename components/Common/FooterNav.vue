@@ -3,7 +3,7 @@
     <div class="w-full md:h-[450px] backgroundFooter flex justify-center items-center">
       <div class="container max-w-[1240px]">
         <div class="md:flex py-24">
-          <div class="flex justify-between w-[45%] items-start">
+          <div class="xl:flex xl:justify-between w-[45%] items-start">
             <div>
               <CommonCompanyLogo class="hidden md:block" />
               <div class="mt-1 ml-2 flex md:block">
@@ -23,7 +23,7 @@
                 </NuxtLink>
               </div>
             </div>
-            <div class="hidden md:block">
+            <div class="hidden md:block md:mt-4 xl:mt-0">
               <div>Phnom penh, Cambodia 120100 </div>
               <div class="mt-2">
                 Smart : +855 87 625 206
@@ -42,7 +42,7 @@
                 </li>
               </ul>
             </div>
-            <div class="md:ml-40 mt-4 md:mt-0">
+            <div class="ml-20 xl:ml-40 mt-4 md:mt-0">
               <div>Our corporate company page</div>
               <div class="mt-4 text-md">
                 <div class="i-heroicons:arrow-top-right-on-square-20-solid w-1em h-1em" />
