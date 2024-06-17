@@ -31,7 +31,7 @@
         <div class="modal-box text-gray-300 xl:flex xl:gap-14 md:w-70% xl:w-6xl xl:items-center">
           <div class="xl:w-1/2 w-full m-a">
             <img
-              class="object-contain md:w-full xl:w-140 xl:h-80"
+              class="object-contain md:w-full h-500px xl:w-140 xl:h-80"
               :src="data.url"
             >
           </div>
