@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="heroBackground w-full pt-10">
+    <div class="heroBackground w-full pt-16">
       <img
         src="/img/companyHero.png"
-        class="w-full object-cover"
+        class="w-full h-360px md:h-full object-cover"
       >
     </div>
   </div>

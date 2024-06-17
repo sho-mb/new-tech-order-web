@@ -1,8 +1,13 @@
 <template>
   <div>
     <div
-      class="backgroundTitle2"
+      class="backgroundTitle2 hidden md:block"
       data-aos="flip-left"
+    >
+      Mission
+    </div>
+    <div
+      class="backgroundTitle2Mobile md:hidden"
     >
       Mission
     </div>
@@ -43,7 +48,7 @@ import { companyText } from '~/types/company'
 </script>
 
 <style>
-.backgroundTitle2 {
+.backgroundTitle2Mobile {
   width: fit-content;
   margin-top: 32px;
   opacity: 1;

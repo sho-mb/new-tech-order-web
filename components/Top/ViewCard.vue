@@ -5,12 +5,12 @@
       @click="handleClick"
     >
       <div
-        class="rounded-[32px] relative border-white border-solid w-full h-full overflow-hidden"
+        class="rounded-[32px] relative border-white border-solid w-full md:h-full h-240px overflow-hidden"
       >
         <img
           :src="backgroundUrl"
-          class="w-full"
-          :height="height"
+          style="object-fit: cover;"
+          class="w-full h-full md:h-390px"
         >
         <div
           class="w-full h-full hover:bg-op-30 hover:bg-black group-hover:duration-300 top-0 left-0 absolute"

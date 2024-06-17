@@ -11,7 +11,7 @@
     </div>
     <div>
       <Swiper
-        :width="280"
+        :width="320"
         :modules="[SwiperEffectCoverflow]"
         :slides-per-view="1"
         :centered-slides="true"
