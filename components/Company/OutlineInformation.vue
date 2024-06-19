@@ -1,10 +1,10 @@
 <template>
-  <div class="md:flex justify-between">
+  <div class="xl:flex xl:justify-between">
     <h2 class="text-4xl md:text-6xl font-montserrat m-0">
       Outline
     </h2>
 
-    <div class="w-full md:w-[60%] mt-4 md:mt-0">
+    <div class="w-full xl:w-[60%] mt-20 xl:mt-0">
       <div
         v-for="info in informations"
         :key="info.head"

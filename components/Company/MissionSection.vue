@@ -56,13 +56,25 @@ import { companyText } from '~/types/company'
   font-weight: bold;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 834px) {
   .backgroundTitle2 {
     position: absolute;
     opacity: 0.15;
-    font-size: 394px;
+    font-size: 220px;
     font-weight: bold;
     left: -80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .backgroundTitle2 {
+    font-size: 260px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .backgroundTitle2 {
+    font-size: 394px;
   }
 }
 </style>

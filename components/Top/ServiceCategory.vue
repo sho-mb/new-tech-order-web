@@ -28,19 +28,19 @@
         class="modal bg-black bg-op-95"
         :class="{ 'modal-open': showModal }"
       >
-        <div class="modal-box text-gray-300 flex gap-14 w-6xl items-center">
-          <div class="w-1/2">
+        <div class="modal-box text-gray-300 xl:flex xl:gap-14 md:w-70% xl:w-6xl xl:items-center">
+          <div class="xl:w-1/2 w-full m-a">
             <img
-              class="object-contain w-140 h-80"
+              class="object-contain md:w-full h-500px xl:w-140 xl:h-80"
               :src="data.url"
             >
           </div>
-          <div class="w-1/2">
-            <p class="text-4xl">
+          <div class="xl:w-1/2 w-full m-a">
+            <p class="md:text-4xl lg:text-5xl xl:text-4xl">
               {{ data.text }}
             </p>
             <p
-              class="leading-normal"
+              class="leading-normal md:text-xl lg:text-2xl xl:text-4"
               v-html="data.content"
             />
           </div>
