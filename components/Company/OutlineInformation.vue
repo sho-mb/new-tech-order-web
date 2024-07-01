@@ -26,7 +26,6 @@
 
 <script lang="ts" setup>
 const informations = [
-
   { head: 'Company name', data: 'New Tech Order' },
   { head: 'Established', data: '22 FEB 2024' },
   { head: 'Address', data: 'PTH Modern apartment #22D st.368,BKK3,Phnompenh ,Cambodia' },
