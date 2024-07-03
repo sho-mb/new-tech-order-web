@@ -12,9 +12,7 @@ export default defineNuxtConfig({
         pass: `${process.env.APP_PASS}`,
       },
     },
-  }],
-  '@nuxtjs/turnstile',
-  ],
+  }], '@nuxtjs/turnstile', '@nuxt/image'],
   turnstile: {
     siteKey: `${process.env.CLOUDFLARE_SITE_KEY}`,
   },
