@@ -20,6 +20,8 @@
         <TopWorksCard
           :category="work.category"
           :content="work.content"
+          :img="work.img"
+          :url="work.url"
           :tag="work.tag"
         />
       </SwiperSlide>
@@ -31,6 +33,8 @@
 interface Work {
   id: number
   category: string
+  url: string
+  img: string
   content: string
   tag: string[]
 }

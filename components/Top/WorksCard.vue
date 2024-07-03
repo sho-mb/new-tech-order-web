@@ -1,10 +1,15 @@
 <template>
   <div class="bg-white w-90% h-320px md:w-[320px] md:h-[400px] rounded-3xl cursor-pointer">
-    <div class="w-full h-165px md:w-[320px] rounded-3xl">
-      <img
-        src="/img/works.png"
-        class="object-cover w-full"
+    <div class="h-150px md:w-[320px] rounded-3xl text-center">
+      <NuxtLink
+        :to="url"
+        target="_blank"
       >
+        <img
+          :src="img"
+          class="object-cover h-full p-4"
+        >
+      </NuxtLink>
     </div>
     <div class="p-3 md:mt-8 md:p-6">
       <div class="text-gray-3 mb-4">
@@ -29,6 +34,12 @@
 <script lang="ts" setup>
 defineProps({
   category: {
+    type: String,
+  },
+  url: {
+    type: String,
+  },
+  img: {
     type: String,
   },
   content: {
