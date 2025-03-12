@@ -14,6 +14,7 @@
       </h1>
       <form
         class="space-y-4"
+        netlify
         @submit.prevent="submitForm"
       >
         <div>
